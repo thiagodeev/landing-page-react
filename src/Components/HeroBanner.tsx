@@ -1,4 +1,5 @@
 import { HeroBannerProdutcCard } from "./HeroBanner_ProdutcCard";
+import { breakpoint } from "../Assets/utilities";
 
 
 import FotoProduto1 from '../Assets/images/produto-1.png';
@@ -6,10 +7,12 @@ import FotoProduto2 from '../Assets/images/produto-2.png';
 import FotoProduto3 from '../Assets/images/produto-3.png';
 
 export function HeroBanner() {
-  let scale = "scale-75";
+  let originalWidth = 480;
+  let originalHeight = 500;
+  
 
   return (
-    <section className="bg-[#03FFA5] pt-8 px-4 -mb-5">
+    <section className="bg-[#03FFA5] py-8 px-4">
       <h1 className="text-4xl">CRIAMOS <br/>LOJAS QUE <br/>VENDEM MAIS.</h1>
       <p className="mt-4">
         A Jüssi é especialista na criação de lojas usando a plataforma VTEX. Precisa criar sua loja ou migrar de plataforma?
@@ -17,8 +20,8 @@ export function HeroBanner() {
 
       <button className="py-3 px-6 my-6 border border-black rounded-md">Veja nossas soluções</button>
 
-      <div className="flex flex-col items-center -mt-24 scale-50">
-        <div className="relative h-[500px] w-[480px]">
+      <div className={`products-container relative w-[240px] h-[250px] mx-auto`}>
+        <div className={`products absolute w-[480px] h-[500px] -translate-x-1/4 -translate-y-1/4 scale-50 ${breakpoint('sm', 'scale-75')}`}>
           <HeroBannerProdutcCard
             imageLink={FotoProduto1}
             buttonText="Comprar em 12x"

@@ -1,6 +1,6 @@
 import './Assets/styles/main.css';
-import { HeroBanner } from "./Components/HeroBanner";
 
+import { HeroBanner } from "./Components/HeroBanner";
 import { NavBar } from "./Components/NavBar";
 
 function App() {

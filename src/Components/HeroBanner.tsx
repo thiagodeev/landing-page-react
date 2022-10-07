@@ -21,18 +21,18 @@ export function HeroBanner() {
           <HeroBannerProdutcCard
             imageLink={FotoProduto1}
             buttonText="Comprar em 12x"
-            className="firstButton-GA4 z-10 left-1/2 -translate-x-1/2 top-0"
+            className="z-10 left-1/2 -translate-x-1/2 top-0"
             imgSize="max-h-36"
           />
           <HeroBannerProdutcCard
             imageLink={FotoProduto2}
             buttonText="Mais Detalhes"
-            className="secondButton-GA4 translate-y-1/2 top-6 left-1.5"
+            className="translate-y-1/2 top-6 left-1.5"
           />
           <HeroBannerProdutcCard
             imageLink={FotoProduto3}
             buttonText="Adicionar à sacola"
-            className="thirdButton-GA4 translate-y-1/4 bottom-16 right-4"
+            className="translate-y-1/4 bottom-16 right-4"
           />
         </div>
       </div>

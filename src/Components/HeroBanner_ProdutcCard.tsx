@@ -12,7 +12,7 @@ export function HeroBannerProdutcCard(props:HeroBannerProdutcCardProps) {
         <img src={props.imageLink} className={`${props.imgSize} pointer-events-none`}/>
       </div>
 
-      <div className="flex h-16 justify-center">
+      <div className="flex h-16 justify-center heroButton-GA4">
         <p className="inline-block fixed bottom-4 mt-3 py-3 px-6 text-myPink border border-myPink rounded-3xl hover:bg-myPink hover:text-white transition-colors">
           {props.buttonText}
         </p>
